@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ShieldCheck, Check, Sparkles, X, Phone } from 'lucide-react';
+import { ShieldCheck, Check, Sparkles, X, Phone, Info } from 'lucide-react';
 import { XiaomiLogo } from './BrandLogos';
 
 interface QuickAuthorizeModalProps {
@@ -63,11 +63,11 @@ export const QuickAuthorizeModal: React.FC<QuickAuthorizeModalProps> = ({
 
         {/* Modal Form */}
         <form onSubmit={handleSubmit} className="p-6 space-y-4">
-          <div className="bg-orange-50/70 rounded-2xl p-3.5 border border-orange-100/80 flex items-start space-x-3">
-            <Sparkles className="w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" />
-            <div className="text-xs text-orange-900 leading-relaxed">
-              <span className="font-bold">免跳转极速授权：</span>
-              已对接小米开放平台授权网关，输入手机号后点击确认即可授权绑定并同步设备。
+          <div className="bg-[#fff7ed] rounded-2xl p-3.5 border border-[#ffedd5] flex items-start space-x-2.5">
+            <Info className="w-4 h-4 text-[#ea580c] flex-shrink-0 mt-0.5" />
+            <div className="text-xs text-[#9a3412] leading-relaxed">
+              <span className="font-bold text-[#c2410c]">绑定要求：</span>
+              绑定时需要使用指定混合网关(91网关系列)，且需要和网关处于同一网络环境下。
             </div>
           </div>
 

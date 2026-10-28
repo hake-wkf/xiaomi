@@ -5,6 +5,7 @@ import {
   RefreshCw,
   Trash2,
   Clock,
+  Info,
 } from 'lucide-react';
 import { StatusBar } from './StatusBar';
 import { BoundAccount } from '../types';
@@ -62,9 +63,18 @@ export const BrandAccountsView: React.FC<BrandAccountsViewProps> = ({
       </div>
 
       {/* Main Account Management Area */}
-      <div className="px-4 py-4 space-y-3 flex-1">
+      <div className="px-4 py-3.5 space-y-3.5 flex-1">
+        {/* ★ 提示：绑定网关与网络环境要求 ★ */}
+        <div className="bg-[#fff7ed] border border-[#ffedd5] rounded-2xl p-3.5 flex items-start space-x-2.5 text-xs text-[#9a3412] shadow-2xs">
+          <Info className="w-4 h-4 text-[#ea580c] flex-shrink-0 mt-0.5" />
+          <p className="leading-relaxed text-[12px]">
+            <span className="font-bold text-[#c2410c]">绑定提示：</span>
+            绑定时需要使用指定混合网关(91网关系列)，且需要和网关处于同一网络环境下。
+          </p>
+        </div>
+
         {/* Section Header: Left has "账号列表", Right has "绑定账号" */}
-        <div className="flex items-center justify-between px-1">
+        <div className="flex items-center justify-between px-1 pt-1">
           <div className="flex items-center space-x-2">
             <span className="text-sm font-bold text-gray-900">账号列表</span>
             <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-gray-200/70 text-gray-700">
