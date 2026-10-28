@@ -1,0 +1,6 @@
+{
+  "name": "智能物联-三方品牌设备管理",
+  "description": "吉物智能空间三方品牌设备管理、小米多账号授权绑定与状态同步管理系统",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
